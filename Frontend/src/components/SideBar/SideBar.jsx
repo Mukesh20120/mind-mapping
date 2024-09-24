@@ -3,7 +3,7 @@ import "./SideBar.css";
 
 function SideBar({ sideBarData, handleOnClick }) {
   return (
-    <div className="sideBar-container">
+    <div className="sideBar-container sm:h-full sm:overflow-y-auto w-full overflow-x-auto flex-row flex sm:flex-col">
       {sideBarData &&
         sideBarData.map((item) => {
           return (

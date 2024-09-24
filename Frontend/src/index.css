@@ -1,5 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box
 }
+
+:root {
+    --primary-color: #16423C;   /* Dark teal green */
+    --secondary-color: #6A9C89; /* Soft sage green */
+    --accent-color: #C4DAD2;    /* Light mint green */
+    --background-color: #E9EFEC; /* Very light pale mint */
+    --text-color: #16423C; /* Use dark teal green for text on light backgrounds */
+  }

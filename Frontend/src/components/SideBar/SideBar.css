@@ -1,18 +1,17 @@
 .sideBar-container{
-    background-color: black;
-     height: 100vh;
-     overflow-y: auto;
+    background-color: var(--primary-color);
 }
 
 .sideBar-item-container{
     margin: 10px;
-    background-color: yellow;
-    border: 2px solid white;
+    background-color: var(--primary-color);
+    border: 2px solid var(--background-color);
     border-radius: 10px
 }
 
 .sideBar-item{
     padding: 10px;
+    color: var(--background-color);
     font-weight: bolder;
     text-transform: capitalize;
 }
