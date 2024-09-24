@@ -6,7 +6,7 @@ function App() {
   const [fileName, setFileName] = useState("");
   const sideBarData = [
     { title: "Design Pattern", fileName: "design-pattern" },
-    { title: "Operating System", fileName: "operating-system" },
+    { title: "System Design", fileName: "system_design" },
   ];
   const handleOnClick = (fileName) => {
     console.log(fileName);
