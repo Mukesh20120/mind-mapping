@@ -8,6 +8,7 @@ function App() {
     { title: "Design Pattern", fileName: "design-pattern" },
     { title: "System Design", fileName: "system_design" },
     { title: "Luck Factor", fileName: "luck_factor_book" },
+    { title: "Operating System", fileName: "operating_system" },
   ];
   const handleOnClick = (fileName) => {
     setFileName(fileName);
