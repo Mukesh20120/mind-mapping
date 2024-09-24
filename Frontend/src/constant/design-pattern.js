@@ -1,13 +1,5 @@
-import React, { useState } from "react";
-import "./DesignPattern.css";
-import logo from "./design_pattern_oop.png";
-
-function DesignPattern() {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [modalContent, setModalContent] = useState("");
-
-  const notes = {
-    note1: `<html>
+export const notesData = {
+  note1: `<html>
 <head>
 <title>
 Note - 1. Factory
@@ -45,7 +37,7 @@ When you want to delegate the responsibility of object creation to a separate cl
 </body>
 </html>
 `,
-    note2: `<html>
+  note2: `<html>
 <head>
 <title>
 Note - Example
@@ -157,7 +149,7 @@ public class Main {
 </body>
 </html>
 `,
-    note3: `<html>
+  note3: `<html>
 <head>
 <title>
 Note - 3. Singleton
@@ -201,7 +193,7 @@ Public Method: Provides access to the single instance.
 </body>
 </html>
 `,
-    note4: `<html>
+  note4: `<html>
 <head>
 <title>
 Note - Example
@@ -289,61 +281,11 @@ public class Main {
 </body>
 </html>
 `,
-  };
+};
 
-  const handleAreaClick = (noteKey) => (event) => {
-    event.preventDefault();
-    setModalContent(notes[noteKey]);
-    setModalVisible(true);
-  };
-
-  const closeModal = () => {
-    setModalVisible(false);
-    setModalContent("");
-  };
-
-  return (
-    <div>
-      <img src={logo} alt="Design Pattern OOP" useMap="#map" />
-      <map name="map">
-        <area
-          shape="rect"
-          coords="195,100,211,116"
-          href="#"
-          onClick={handleAreaClick("note1")}
-        />
-        <area
-          shape="rect"
-          coords="190,26,206,42"
-          href="#"
-          onClick={handleAreaClick("note2")}
-        />
-        <area
-          shape="rect"
-          coords="605,114,621,130"
-          href="#"
-          onClick={handleAreaClick("note3")}
-        />
-        <area
-          shape="rect"
-          coords="607,27,623,43"
-          href="#"
-          onClick={handleAreaClick("note4")}
-        />
-      </map>
-
-      {modalVisible && (
-        <div className="modal" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={closeModal}>
-              &times;
-            </span>
-            <div dangerouslySetInnerHTML={{ __html: modalContent }} />
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
-
-export default DesignPattern;
+export const coordsData = [
+  { coords: "195,100,211,116", noteKey: "note1" },
+  { coords: "190,26,206,42", noteKey: "note2" },
+  { coords: "605,114,621,130", noteKey: "note3" },
+  { coords: "607,27,623,43", noteKey: "note4" },
+];

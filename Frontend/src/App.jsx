@@ -1,17 +1,27 @@
-import React from "react";
-import DesignPattern from "./components/DesignPattern/DesignPattern";
+import React, { useState } from "react";
+import MindMappingWrapper from "./components/MindMappingWrapper/MindMappingWrapper";
+import SideBar from "./components/SideBar/SideBar";
 
 function App() {
+  const [fileName, setFileName] = useState("");
+  const sideBarData = [
+    { title: "Design Pattern", fileName: "design-pattern" },
+    { title: "Operating System", fileName: "operating-system" },
+  ];
+  const handleOnClick = (fileName) => {
+    console.log(fileName);
+    setFileName(fileName);
+  };
   return (
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
         alignItems: "center",
+        gap: 2,
       }}
     >
-      <h1>Mind Mapping</h1>
-      <DesignPattern />
+      <SideBar sideBarData={sideBarData} handleOnClick={handleOnClick} />
+      <MindMappingWrapper fileName={fileName} />
     </div>
   );
 }
