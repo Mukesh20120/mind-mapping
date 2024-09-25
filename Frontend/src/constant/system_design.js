@@ -180,8 +180,26 @@ solution: - Network Time protocol
 };
 
 export const coordsData = [
-  { coords: "156,32,172,48", noteKey: "note1" },
-  { coords: "260,28,276,44", noteKey: "note2" },
-  { coords: "414,26,430,42", noteKey: "note3" },
-  { coords: "559,38,575,54", noteKey: "note4" },
+  { coords: "568,38,584,54", noteKey: "note1" },
+  { coords: "612,80,628,96", noteKey: "note2" },
+  { coords: "681,26,697,42", noteKey: "note3" },
+  { coords: "765,66,781,82", noteKey: "note4" },
+  // { coords: '689,413,705,429', noteKey: 'note5' },
+  // { coords: '245,1019,261,1035', noteKey: 'note6' },
+  // { coords: '216,1136,232,1152', noteKey: 'note7' },
+  // { coords: '165,1189,181,1205', noteKey: 'note8' },
+  // { coords: '103,1154,119,1170', noteKey: 'note9' },
+  // { coords: '303,1161,319,1177', noteKey: 'note10' },
+  // { coords: '111,926,127,942', noteKey: 'note11' },
+  // { coords: '399,1105,415,1121', noteKey: 'note12' },
+  // { coords: '526,1092,542,1108', noteKey: 'note13' },
+  // { coords: '580,1042,596,1058', noteKey: 'note14' },
+  // { coords: '463,1060,479,1076', noteKey: 'note15' },
+  // { coords: '294,892,310,908', noteKey: 'note16' },
+  // { coords: '943,1083,959,1099', noteKey: 'note17' },
+  // { coords: '1049,1109,1065,1125', noteKey: 'note18' },
+  // { coords: '1076,1054,1092,1070', noteKey: 'note19' },
+  // { coords: '1186,1092,1202,1108', noteKey: 'note20' },
+  // { coords: '1131,877,1147,893', noteKey: 'note21' },
+  // { coords: '1052,844,1068,860', noteKey: 'note22' }
 ];

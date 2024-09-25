@@ -48,6 +48,7 @@ function MindMappingWrapper({ fileName }) {
 
   const handleAreaClick = (noteKey) => (event) => {
     event.preventDefault();
+    console.log({ noteKey });
     setModalContent(notesData[noteKey]);
     setModalVisible(true);
   };
@@ -58,7 +59,7 @@ function MindMappingWrapper({ fileName }) {
   };
 
   const handleWheel = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     const zoomDirection = event.deltaY > 0 ? -0.1 : 0.1;
     setScale((prevScale) =>
       Math.min(Math.max(prevScale + zoomDirection, 1), 3)
