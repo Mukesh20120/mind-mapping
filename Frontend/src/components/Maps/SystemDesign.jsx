@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/system_design.png";
 import { notesData, coordsData } from "../../constant/system_design";
+import "./common.css";
 
 export default function SystemDesign() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -17,7 +18,18 @@ export default function SystemDesign() {
   };
 
   return (
-    <>
+    <div className="container">
+      {modalVisible && (
+        <div onClick={closeModal} className="modal-container">
+          <div className="modal-content">
+            <span onClick={closeModal} className="modal-close">
+              &times;
+            </span>
+            <div dangerouslySetInnerHTML={{ __html: modalContent.body }} />
+          </div>
+        </div>
+      )}
+
       <img src={logo} alt="system-design" border="none" useMap="#map" />
       <map name="map">
         {coordsData.map((item) => (
@@ -31,19 +43,6 @@ export default function SystemDesign() {
           </>
         ))}
       </map>
-
-      {modalVisible && (
-        <div
-          onClick={closeModal}
-        >
-          <div onClick={(e) => e.stopPropagation()}>
-            <span  onClick={closeModal}>
-              &times;
-            </span>
-            <div dangerouslySetInnerHTML={{ __html: modalContent.body }} />
-          </div>
-        </div>
-      )}
-    </>
+    </div>
   );
 }
