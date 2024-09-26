@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/operating_system.png";
 import { notesData, coordsData } from "../../constant/operating_system";
+import "./common.css";
 
 export default function OperatingSystem() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -17,8 +18,19 @@ export default function OperatingSystem() {
   };
 
   return (
-    <div className="flex items-center justify-center">
-      <img src={logo} alt="system-design" useMap="#map" />
+    <div className="container">
+      {modalVisible && (
+        <div onClick={closeModal} className="modal-container">
+          <div className="modal-content">
+            <span onClick={closeModal} className="modal-close">
+              &times;
+            </span>
+            <div dangerouslySetInnerHTML={{ __html: modalContent.body }} />
+          </div>
+        </div>
+      )}
+
+      <img src={logo} alt="operating-system" border="none" useMap="#map" />
       <map name="map">
         {coordsData.map((item) => (
           <>
@@ -31,17 +43,6 @@ export default function OperatingSystem() {
           </>
         ))}
       </map>
-
-      {modalVisible && (
-        <div className="modal" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={closeModal}>
-              &times;
-            </span>
-            <div dangerouslySetInnerHTML={{ __html: modalContent }} />
-          </div>
-        </div>
-      )}
     </div>
   );
 }
