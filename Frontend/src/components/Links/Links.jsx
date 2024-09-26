@@ -15,7 +15,7 @@ export default function Links() {
       <div className="link-body flex justify-center items-center flex-wrap">
         {linksData.map((item) => (
           <div key={item.path} className="link--box m-3 rounded-lg">
-            <Link to={item.path} target="_blank">
+            <Link to={item.path}>
               <p className="link--text font-bold p-2">{item.title}</p>
             </Link>
           </div>
