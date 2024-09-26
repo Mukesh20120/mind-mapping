@@ -22,9 +22,11 @@ export default function SystemDesign() {
       {modalVisible && (
         <div onClick={closeModal} className="modal-container">
           <div className="modal-content">
-            <span onClick={closeModal} className="modal-close">
-              &times;
-            </span>
+            <div className="modal-close-container">
+              <p onClick={closeModal} className="modal-close">
+                &times;
+              </p>
+            </div>
             <div dangerouslySetInnerHTML={{ __html: modalContent.body }} />
           </div>
         </div>

@@ -26,9 +26,22 @@
     border-radius: 5px;
   }
 
+  .modal-close-container{
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
   .modal-close{
-    margin-left: 50%;
-    font-size: larger;
-    font-weight: bolder
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--primary-color);
   }
   
