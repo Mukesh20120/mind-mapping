@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
-
 :root {
     --primary-color: #16423C;   /* Dark teal green */
     --secondary-color: #6A9C89; /* Soft sage green */

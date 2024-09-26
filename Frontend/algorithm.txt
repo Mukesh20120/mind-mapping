@@ -14,7 +14,7 @@ function extractCoordsData(areasString) {
         const href = match[2];
 
         // Extract the noteKey from the href value (remove underscore from "note_x")
-        const noteKey = href.split('/').pop().replace('.html', '').replace('_', '');
+        const noteKey = href.split('/').pop().replace('.html', '');
 
         // Push the object into the array
         coordsDataArray.push({
@@ -27,12 +27,7 @@ function extractCoordsData(areasString) {
 }
 
 // Example usage
-const areasString = `<area shape="rect" coords="305,251,321,267" href="notes/note_1.html"/> 
-<area shape="rect" coords="209,134,225,150" href="notes/note_2.html"/>
-<area shape="rect" coords="288,26,304,42" href="notes/note_3.html"/>
-<area shape="rect" coords="423,46,439,62" href="notes/note_4.html"/>
-<area shape="rect" coords="714,340,730,356" href="notes/note_5.html"/>
-<area shape="rect" coords="483,350,499,366" href="notes/note_6.html"/>`;
+const areasString = ``;
 
 const coordsData = extractCoordsData(areasString);
 console.log(coordsData);

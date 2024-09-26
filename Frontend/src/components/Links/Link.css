@@ -1,0 +1,12 @@
+.link--body{
+    background-color: var(--secondary-color);
+}
+
+.link--box{
+  background-color: var(--primary-color);
+}
+
+.link--text{
+    text-decoration: none;
+    color: var(--accent-color);
+}
