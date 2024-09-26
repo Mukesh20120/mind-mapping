@@ -59,9 +59,53 @@ export const notesData = {
     "title": "\nNote - 3. Data Noise\n",
     "body": "﻿\n\n<title>\nNote - 3. Data Noise\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\n3. Data Noise\n</h2>\n<hr>\n<p>\nData Noise\n<br>\n\n<br>\nSome content and Url is not usefull\n<br>\nsuch as ADS, code snippet , spam url etc\n</p>\n\n\n"
   },
+  "note_23": {
+    "title": "\nNote - Design Consistent Hasing\n",
+    "body": "﻿\n\n<title>\nNote - Design Consistent Hasing\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nDesign Consistent Hasing\n</h2>\n<hr>\n<p>\nConsistent hashing\n<br>\n\n<br>\nIn horizontal scaling there are number of servers how will you define on which server the user request will go.\n</p>\n\n\n"
+  },
+  "note_24": {
+    "title": "\nNote - Rehash Problem\n",
+    "body": "﻿\n\n<title>\nNote - Rehash Problem\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nRehash Problem\n</h2>\n<hr>\n<p>\nRehash Problem\n<br>\n\n<br>\n create a function which id%n = server number.\n<br>\n\n<br>\ngood for fixed number of server\n<br>\n\n<br>\nThe problem arise\n<br>\n1. Adding and removing server the function change server for the user request\n</p>\n\n\n"
+  },
+  "note_25": {
+    "title": "\nNote - Basic\n",
+    "body": "﻿\n\n<title>\nNote - Basic\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nBasic\n</h2>\n<hr>\n<p>\nBasic Consistent Hashing\n<br>\n\n<br>\n10 thousand feet view\n<br>\nCreate a array and join it's end make it like cycle\n<br>\n\n<br>\nNow create function that give position to put server on array\n<br>\n\n<br>\nand other function for user to map on server\n<br>\n\n<br>\nnow every user request goes to the clockwise first server it found\n</p>\n\n\n"
+  },
+  "note_26": {
+    "title": "\nNote - Problem\n",
+    "body": "﻿\n\n<title>\nNote - Problem\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nProblem\n</h2>\n<hr>\n<p>\nProblem\n<br>\n\n<br>\n1. The Gap between adjacent server might be greater which create inconsistency of distribution of the request to server. One server might getting greater number of request\n<br>\n\n<br>\n2.The Number of user might concentrated on particular window of the array.\n</p>\n\n\n"
+  },
+  "note_27": {
+    "title": "\nNote - Optimized\n",
+    "body": "﻿\n\n<title>\nNote - Optimized\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nOptimized\n</h2>\n<hr>\n<p>\nOptimized Consistent Hashing\n<br>\n\n<br>\nCreate a virtual nodes put on different placer using server function position generator(something like that)\n<br>\nNow you problem is solved :)\n</p>\n\n\n"
+  },
+  "note_28": {
+    "title": "\nNote - Type of Notifcation\n",
+    "body": "﻿\n\n<title>\nNote - Type of Notifcation\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nType of Notifcation\n</h2>\n<hr>\n<p>\nType of Notification\n<br>\n\n<br>\n1. FCM for android \n<br>\n2. APN for Apple (apple push notification)\n<br>\n3. Twillo and Neximo etc\n<br>\n4. Email Service\n</p>\n\n\n"
+  },
+  "note_29": {
+    "title": "\nNote - Contact Gathering\n",
+    "body": "﻿\n\n<title>\nNote - Contact Gathering\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nContact Gathering\n</h2>\n<hr>\n<p>\nContact Gathering\n<br>\n\n<br>\nWhen User login/sign in system it get device token that will be store in the database. which will require by these 3rd party service to push the notification on the device\n</p>\n\n\n"
+  },
   "note_3": {
     "title": "\nNote - Ticket Server\n",
     "body": "﻿\n\n<title>\nNote - Ticket Server\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nTicket Server\n</h2>\n<hr>\n<p>\nDefinition\n<br>\nOnly one server is responsible to generate the id for the other servers\n<br>\n\n<br>\n\n<br>\nPros:\n<br>\n-easy to implement\n<br>\n\n<br>\nCons:\n<br>\n-single point of failure and when another server we take for backup new problem arise data synchronization\n</p>\n\n\n"
+  },
+  "note_30": {
+    "title": "\nNote - Problem\n",
+    "body": "﻿\n\n<title>\nNote - Problem\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nProblem\n</h2>\n<hr>\n<p>\nProblem\n<br>\n\n<br>\n1. Single point of failure (spof)\n<br>\n2. Some 3rd party service are not available in different location\n<br>\n3.Performance bottleneck Over load\n<br>\n4. Hard to Scale\n</p>\n\n\n"
+  },
+  "note_31": {
+    "title": "\nNote - Solution\n",
+    "body": "﻿\n\n<title>\nNote - Solution\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nSolution\n</h2>\n<hr>\n<p>\nSolution\n<br>\n\n<br>\nImprovement\n<br>\n\n<br>\n1. Add cache while getting data for notification from storage/db\n<br>\n2. User multiple server for notification sending\n<br>\n3. User queue for sending notification to 3rd party services\n</p>\n\n\n"
+  },
+  "note_32": {
+    "title": "\nNote - WorkFlow\n",
+    "body": "﻿\n\n<title>\nNote - WorkFlow\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nWorkFlow\n</h2>\n<hr>\n<p>\nWorkFlow\n<br>\n\n<br>\n1. Server trigger the notification\n<br>\n2. Notification server get the data from the cache\n<br>\n3.Cache send data if have or retrieve from DB\n<br>\n4. Notification DB store the user details like device token, setting and other details\n<br>\n5.Messaging queue All notification go into the queue for assign service android,ios,email,sms;\n<br>\n6.Worker take the notification from the queue and send it to 3rd party service for push notification\n<br>\n7.3rd party service Explain in Type of notification\n<br>\n8.Device get the notification\n</p>\n\n\n"
+  },
+  "note_33": {
+    "title": "\nNote - Data Loss\n",
+    "body": "﻿\n\n<title>\nNote - Data Loss\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nData Loss\n</h2>\n<hr>\n<p>\nData Loss\n<br>\n\n<br>\nPrevent data loss\n<br>\n\n<br>\nWorker is taking message from the queue and send it to the 3rd party\n<br>\nit should also check for failure if notification is not send it maintain the DB where log of notification present when a notification is failed it retry again check.\n<br>\nSend only one notification\n<br>\nCheck for the id. Same a like visited array to check if visited or not\n</p>\n\n\n"
   },
   "note_4": {
     "title": "\nNote - Twitter Snowflaw\n",
@@ -87,30 +131,139 @@ export const notesData = {
     "title": "\nNote - Politeness\n",
     "body": "﻿\n\n<title>\nNote - Politeness\n</title>\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"../favicon.png\">\n\n\n<h2>\nPoliteness\n</h2>\n<hr>\n<p>\nPoliteness\n<br>\n\n<br>\nWeb crawler can create 10000/sec request so it must be maintain interval so the web can't detect it's a bot or not fill the server with web crawler request\n</p>\n\n\n"
   }
-};
+}
 
-export const coordsData = [
-  { coords: '568,38,584,54', noteKey: 'note_1' },
-  { coords: '612,80,628,96', noteKey: 'note_2' },
-  { coords: '681,26,697,42', noteKey: 'note_3' },
-  { coords: '765,66,781,82', noteKey: 'note_4' },
-  { coords: '689,413,705,429', noteKey: 'note_5' },
-  { coords: '245,1019,261,1035', noteKey: 'note_6' },
-  { coords: '216,1136,232,1152', noteKey: 'note_7' },
-  { coords: '165,1189,181,1205', noteKey: 'note_8' },
-  { coords: '103,1154,119,1170', noteKey: 'note_9' },
-  { coords: '303,1161,319,1177', noteKey: 'note_10' },
-  { coords: '111,926,127,942', noteKey: 'note_11' },
-  { coords: '399,1105,415,1121', noteKey: 'note_12' },
-  { coords: '526,1092,542,1108', noteKey: 'note_13' },
-  { coords: '580,1042,596,1058', noteKey: 'note_14' },
-  { coords: '463,1060,479,1076', noteKey: 'note_15' },
-  { coords: '294,892,310,908', noteKey: 'note_16' },
-  { coords: '943,1083,959,1099', noteKey: 'note_17' },
-  { coords: '1049,1109,1065,1125', noteKey: 'note_18' },
-  { coords: '1076,1054,1092,1070', noteKey: 'note_19' },
-  { coords: '1186,1092,1202,1108', noteKey: 'note_20' },
-  { coords: '1131,877,1147,893', noteKey: 'note_21' },
-  { coords: '1052,844,1068,860', noteKey: 'note_22' }
-];
-
+ export const coordsData = [
+  {
+    "coords": "516,351,532,367",
+    "noteKey": "note_1"
+  },
+  {
+    "coords": "506,301,522,317",
+    "noteKey": "note_2"
+  },
+  {
+    "coords": "625,300,641,316",
+    "noteKey": "note_3"
+  },
+  {
+    "coords": "706,345,722,361",
+    "noteKey": "note_4"
+  },
+  {
+    "coords": "813,770,829,786",
+    "noteKey": "note_5"
+  },
+  {
+    "coords": "276,1109,292,1125",
+    "noteKey": "note_6"
+  },
+  {
+    "coords": "217,1226,233,1242",
+    "noteKey": "note_7"
+  },
+  {
+    "coords": "160,1272,176,1288",
+    "noteKey": "note_8"
+  },
+  {
+    "coords": "103,1230,119,1246",
+    "noteKey": "note_9"
+  },
+  {
+    "coords": "300,1262,316,1278",
+    "noteKey": "note_10"
+  },
+  {
+    "coords": "183,994,199,1010",
+    "noteKey": "note_11"
+  },
+  {
+    "coords": "399,1296,415,1312",
+    "noteKey": "note_12"
+  },
+  {
+    "coords": "527,1307,543,1323",
+    "noteKey": "note_13"
+  },
+  {
+    "coords": "589,1270,605,1286",
+    "noteKey": "note_14"
+  },
+  {
+    "coords": "470,1266,486,1282",
+    "noteKey": "note_15"
+  },
+  {
+    "coords": "366,1030,382,1046",
+    "noteKey": "note_16"
+  },
+  {
+    "coords": "904,1383,920,1399",
+    "noteKey": "note_17"
+  },
+  {
+    "coords": "976,1449,992,1465",
+    "noteKey": "note_18"
+  },
+  {
+    "coords": "1014,1397,1030,1413",
+    "noteKey": "note_19"
+  },
+  {
+    "coords": "1120,1433,1136,1449",
+    "noteKey": "note_20"
+  },
+  {
+    "coords": "1111,1176,1127,1192",
+    "noteKey": "note_21"
+  },
+  {
+    "coords": "1037,1133,1053,1149",
+    "noteKey": "note_22"
+  },
+  {
+    "coords": "783,552,799,568",
+    "noteKey": "note_23"
+  },
+  {
+    "coords": "710,484,726,500",
+    "noteKey": "note_24"
+  },
+  {
+    "coords": "873,438,889,454",
+    "noteKey": "note_25"
+  },
+  {
+    "coords": "838,381,854,397",
+    "noteKey": "note_26"
+  },
+  {
+    "coords": "751,439,767,455",
+    "noteKey": "note_27"
+  },
+  {
+    "coords": "1325,65,1341,81",
+    "noteKey": "note_28"
+  },
+  {
+    "coords": "1251,26,1267,42",
+    "noteKey": "note_29"
+  },
+  {
+    "coords": "1050,207,1066,223",
+    "noteKey": "note_30"
+  },
+  {
+    "coords": "1125,167,1141,183",
+    "noteKey": "note_31"
+  },
+  {
+    "coords": "1006,260,1022,276",
+    "noteKey": "note_32"
+  },
+  {
+    "coords": "986,152,1002,168",
+    "noteKey": "note_33"
+  }
+]
