@@ -22,11 +22,11 @@ function extractNotes(folderPath) {
         const $ = cheerio.load(htmlData);
 
         // Extract title and body
-        const title = $("title").text();
+       
         const body = $("body").html();
 
         // Create an object where the key is the filename (without extension)
-        notesObject[fileNameWithoutExtension] = { title, body };
+        notesObject[fileNameWithoutExtension] = { body };
       } catch (error) {
         console.error(`Error reading file: ${file}, Error: ${error.message}`);
       }
