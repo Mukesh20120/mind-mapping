@@ -1,0 +1,13 @@
+Step 1. export mind map as website you will get html,notes,png
+Step 2. inside GetMindMapNotes run cmd:- npm start
+Step 3. it will ask the folder path of the website and then generate constant variables for notes and coordinates
+Step 4. Go inside frontend folder and in side src/assets paste the png image
+Step 5. Inside the src/constant folder paste the generate file from GetMindMapNotes.
+Step 6. Create a component inside src/component 
+Step 7. change log and notes file path
+Step 8. add the tile and file name inside links folder 
+Step 9. Add component inside the app.jsx file
+
+Note:- component file name & png & constant & link fileName should be same
+
+Read the code how the flow work you will understand that.

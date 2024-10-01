@@ -7,6 +7,7 @@ export default function Links() {
     { title: "System Design", path: "system_design" },
     { title: "Luck Factor", path: "luck_factor_book" },
     { title: "Operating System", path: "operating_system" },
+    { title: "Ankur Warikoo", path: "ankur_warikoo" },
   ];
 
   return (

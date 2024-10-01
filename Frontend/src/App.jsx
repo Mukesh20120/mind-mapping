@@ -4,7 +4,7 @@ import Links from "./components/Links/Links";
 import SystemDesign from "./components/Maps/SystemDesign";
 import LuckFactor from "./components/Maps/LuckFactor";
 import OperatingSystem from "./components/Maps/OperatingSystem";
-
+import AnkurWarikoo from "./components/Maps/AnkurWarikoo";
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +13,7 @@ function App() {
         <Route path="/system_design" element={<SystemDesign />} />
         <Route path="/luck_factor_book" element={<LuckFactor />} />
         <Route path="/operating_system" element={<OperatingSystem />} />
+        <Route path="/ankur_warikoo" element={<AnkurWarikoo />} />
       </Routes>
     </BrowserRouter>
   );
