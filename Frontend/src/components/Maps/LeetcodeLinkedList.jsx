@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import logo from "../../assets/leetcode_linkedList.png";
+import logo from "../../assets/leetcode_linkedlist.png";
 import { notesData, coordsData } from "../../constant/leetcode_linkedList";
 import "./common.css";
 
