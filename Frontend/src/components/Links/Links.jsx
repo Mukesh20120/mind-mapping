@@ -8,6 +8,7 @@ export default function Links() {
     { title: "Operating System", path: "operating_system" },
     { title: "Ankur Warikoo", path: "ankur_warikoo" },
     { title: "Leetcode LinkedList", path: "leetcode_linkedlist" },
+    { title: "Leetcode Parenthesis", path: "leetcode_parenthesis" },
   ];
 
   return (

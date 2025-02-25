@@ -5,6 +5,7 @@ import LuckFactor from "./components/Maps/LuckFactor";
 import OperatingSystem from "./components/Maps/OperatingSystem";
 import AnkurWarikoo from "./components/Maps/AnkurWarikoo";
 import LeetcodeLinkedList from "./components/Maps/LeetcodeLinkedList";
+import LeetcodeParenthesis from "./components/Maps/LeetcodeParenthesis";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/operating_system" element={<OperatingSystem />} />
         <Route path="/ankur_warikoo" element={<AnkurWarikoo />} />
         <Route path="/leetcode_linkedlist" element={<LeetcodeLinkedList />} />
+        <Route path="/leetcode_parenthesis" element={<LeetcodeParenthesis />} />
       </Routes>
     </BrowserRouter>
   );
