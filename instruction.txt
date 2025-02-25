@@ -1,3 +1,13 @@
+25-2-2025 changes
+Step 1: Upgrade the process and export the mind map. You will receive a ZIP file.
+Step 2: Extract the ZIP file into the same folder (folder name is important as all files will be affected by it).
+Step 3: Start GetMindMapNotes by running npm start and provide the folder path. All files will be copied, generated, or created in the designated location.
+Step 4: Add the title and link name in the link.jsx file.
+Step 5: Add the component in the App.jsx file
+Step 6: Enjoy!
+
+
+
 Step 1. export mind map as website you will get html,notes,png
 Step 2. inside GetMindMapNotes run cmd:- npm start
 Step 3. it will ask the folder path of the website and then generate constant variables for notes and coordinates
