@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./Link.css";
 
@@ -8,6 +7,7 @@ export default function Links() {
     { title: "Luck Factor", path: "luck_factor_book" },
     { title: "Operating System", path: "operating_system" },
     { title: "Ankur Warikoo", path: "ankur_warikoo" },
+    { title: "Leetcode LinkedList", path: "leetcode_linkedlist" },
   ];
 
   return (
