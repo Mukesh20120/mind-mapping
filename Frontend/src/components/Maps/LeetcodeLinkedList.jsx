@@ -27,7 +27,7 @@ export default function LeetcodeLinkedList() {
                 &times;
               </p>
             </div>
-            <div dangerouslySetInnerHTML={{ __html: modalContent.body }} />
+            <div className=" text-white text-xl" dangerouslySetInnerHTML={{ __html: modalContent.body }} />
           </div>
         </div>
       )}

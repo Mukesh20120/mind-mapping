@@ -12,11 +12,11 @@ export default function Links() {
 
   return (
     <>
-      <h1 className=" text-center">All Links of Mind Map</h1>
+      <h1 className=" text-center text-4xl font-extrabold">All Links of Mind Map</h1>
       <div className="link-body flex justify-center items-center flex-wrap">
         {linksData.map((item) => (
           <div key={item.path} className="link--box m-3 rounded-lg">
-            <Link to={item.path}>
+            <Link to={item.path} style={{ textDecoration: "none" }}>
               <p className="link--text font-bold p-2">{item.title}</p>
             </Link>
           </div>

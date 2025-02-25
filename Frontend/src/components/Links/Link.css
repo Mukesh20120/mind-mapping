@@ -1,12 +1,23 @@
-.link--body{
+.link--body {
     background-color: var(--secondary-color);
 }
 
-.link--box{
-  background-color: var(--primary-color);
+.link--box {
+    background-color: var(--primary-color);
+    width: 15rem;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 0.3rem 0.5rem black; 
+    transition: transform 0.2s; 
 }
 
-.link--text{
+.link--box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.link--text {
     text-decoration: none;
-    color: var(--accent-color);
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 0 0 0.5rem black;
 }
