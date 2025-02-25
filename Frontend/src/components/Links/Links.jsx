@@ -9,6 +9,7 @@ export default function Links() {
     { title: "Ankur Warikoo", path: "ankur_warikoo" },
     { title: "Leetcode LinkedList", path: "leetcode_linkedlist" },
     { title: "Leetcode Parenthesis", path: "leetcode_parenthesis" },
+    { title: "Leetcode Hashmap", path: "leetcode_hashmap" },
   ];
 
   return (
