@@ -10,6 +10,7 @@ export default function Links() {
     { title: "Leetcode LinkedList", path: "leetcode_linkedlist" },
     { title: "Leetcode Parenthesis", path: "leetcode_parenthesis" },
     { title: "Leetcode Hashmap", path: "leetcode_hashmap" },
+    { title: "Leetcode SlidingWindow", path: "leetcode_slidingwindow" },
   ];
 
   return (

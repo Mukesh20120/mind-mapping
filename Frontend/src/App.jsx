@@ -7,6 +7,7 @@ import AnkurWarikoo from "./components/Maps/AnkurWarikoo";
 import LeetcodeLinkedList from "./components/Maps/LeetcodeLinkedList";
 import LeetcodeParenthesis from "./components/Maps/LeetcodeParenthesis";
 import Leetcode_hashmap from "./components/Maps/Leetcode_hashmap";
+import Leetcode_Slidingwindow from "./components/Maps/Leetcode_Slidingwindow";
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/leetcode_linkedlist" element={<LeetcodeLinkedList />} />
         <Route path="/leetcode_parenthesis" element={<LeetcodeParenthesis />} />
         <Route path="/leetcode_hashmap" element={<Leetcode_hashmap/>} />
+        <Route path="/leetcode_slidingwindow" element={<Leetcode_Slidingwindow/>} />
       </Routes>
     </BrowserRouter>
   );
